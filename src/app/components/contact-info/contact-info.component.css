@@ -6,7 +6,6 @@ ul {
   overflow: hidden;
   position: fixed;
   bottom: 0;
-  background-color: #a61c3c;
   margin-right: 0;
   }
 
@@ -17,14 +16,12 @@ ul {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: #a61c3c;
   }
   li a {
     color: white;
     padding: 14px 16px;
     text-align: center;
     text-decoration: none;
-    background-color: #a61c3c;
   }
 
 li a:hover {

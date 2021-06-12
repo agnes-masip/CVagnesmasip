@@ -1,1 +1,49 @@
+.container{
+    position: relative;
+}
 
+.overlay{
+    position: absolute;
+}
+
+.w3docs_tool_trapezoid {
+    
+    float: right;
+    border-top: 50px;
+	border-left: 25px solid transparent;
+	border-right: 0px solid transparent;
+    width: 376px;
+    height: 712px;
+    margin: 0;
+    background-color: #052136;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+ }
+
+ .intro{
+     text-align: center;
+     margin-top: 30px;
+     font-size: larger;
+     margin-left: 230px;
+     margin-right: 230px;
+ }
+
+ .triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+    transform: rotateZ(10deg);
+	border-bottom: 55px solid rgb(218, 0, 0);
+}
+
+.triangle-up2 {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+    transform: rotateZ(-10deg);
+	border-bottom: 55px solid rgb(4, 5, 88);
+    float: right;
+}
