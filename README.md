@@ -30,3 +30,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 # CVagnesmasip
+
+# Color Palette
+rgb(239, 239, 239) cultured white
+rgb(55, 0, 49) dark purple
+rgb(11, 0, 51) russian violet
+rgb(131, 34, 50) antique ruby
+rgb(191, 205, 224) light steel blue
+
+background-color: #b7999c; tuscany
+121420 xiketic
+1b2432  gunmetal
+2c2b3c raisin black
+a61c3c vivid burgundy
