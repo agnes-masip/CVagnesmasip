@@ -47,3 +47,7 @@
 	border-bottom: 55px solid rgb(4, 5, 88);
     float: right;
 }
+
+.animate__animated.animate__bounceInDown {
+    --animate-duration: 1.5s;
+  }
