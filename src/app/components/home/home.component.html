@@ -1,0 +1,235 @@
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<div class="container">
+  <section @fade id="home">
+    <div class="main">
+      <div class="background">
+          <div class="circle xxlarge shade1"></div>
+          <div class="circle xlarge shade2"></div>
+          <div class="circle large shade3"></div>
+          <div class="circle mediun shade4"></div>
+          <div class="circle small shade5"></div>
+        
+      </div>
+      
+      <div class="intro">
+        <h2 class="line-1 anim-typewriter">Hi! I am <span class="highlight">Agnés Masip Gómez</span></h2>
+        
+          
+          <h5 >I'm a software engineer and a full-stack developer.</h5>
+          <div class="buttons">
+          <a href="#aboutMe"><button mat-raised-button>Know more</button></a>
+          <button style="background-color: #450404" mat-raised-button>Download my CV</button>
+        </div>
+          <!-- 
+          <i class="material-icons" style="font-size:48vh;color:#450404; align-content: center;">circle</i>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <section id="aboutMe">
+    <div class="screen_container">
+      <h2 class="title">About Me</h2>
+        <div class="card">
+          <div class="table">
+            
+            <div class="job">
+              <i class="material-icons" style="font-size:10vh;color:rgb(161, 17, 17)">laptop</i>
+              <div class="expl">
+              <h1>Front-End Developer</h1>
+              <p>Experience in Web development and Android mobile applications.</p>
+            </div>
+              <div class="programs">
+                <img src="../../../assets/img/html.png" alt="html logo" width="auto" height="80">
+                <img src="../../../assets/img/css.png" alt="html logo" width="auto" height="80">
+                <img src="../../../assets/img/js.png" alt="html logo" width="auto" height="80">
+                <img src="../../../assets/img/angular.jpg" alt="html logo" width="auto" height="80">
+                <img src="../../../assets/img/react.jpg" alt="html logo" width="auto" height="80">
+                
+              </div>
+            </div>
+            <div class="job">
+              <i class="material-icons" style="font-size:10vh;color:rgb(161, 17, 17);">storage</i>
+              <h1>Back-End Developer</h1>
+              <p>Experience in the creation of API REST from scratch and the deployment and manteinance of servers and databases.</p>
+              
+              <select @fade (change)="selectChangeHandler($event)">
+                <option value="Code">Code</option>
+                <option value="Deployment">Deployment</option>
+                <option value="Databases">Databases</option>
+                <option value="Documentation">Documentation</option>
+                <option value="Testing">Testing</option>
+            </select>
+            <img @fade src={{img1}} alt="html logo" width="auto" height="80">
+            <img @fade src={{img2}} width="auto" height="80">
+            <img @fade src={{img3}} onerror="hideImg()" width="auto" height="80">
+            <script>
+              function hideImg() {
+                document.getElementById("HideImg")
+                                  .style.display = "none";
+               }
+            </script>
+            <!-- 
+              <h2>Node.js,Express,JS</h2>
+              <label for="option2">Deployment</label>
+                  <article>
+                    <P>AWS EC2, Heroku, Docker</P>
+                    <label for="option3">Databases</label>
+                  </article>
+                  <article>
+                    <P>Sqlite3, Firebase, MongoDB</P>
+                  </article>
+                  <label for="option4">Documentation</label>
+                  <article>
+                    <P>Postman, OpenAPI, Swagger</P>
+                  </article>
+                  <label for="option5">Testing</label>
+                  <article>
+                    <P>Mocha, Chai</P>
+                  </article>
+                  
+               
+                 
+               -->
+              
+              
+            </div>
+            <div class="job">
+              <i class="material-icons" style="font-size:10vh;color:rgb(161, 17, 17);">waterfall_chart</i>
+              <h1>Software Engineer</h1>
+              <p>Experience in the creating of many software projects plans; UML diagrams, time and money management and requisites.</p>
+              <h3>Agile Methodologies</h3>
+              <h3>UML, OCL</h3>
+              <h3>Requirements engineer</h3>
+              
+            </div>
+          </div>
+        </div>
+          <button mat-raised-button>More information about programming languages and my experience with them</button>
+    </div>
+   
+    
+
+  </section>
+  <section id="studies">
+    <div class="screen_container">
+          <h2 class="title">Studies</h2>
+          
+          <mat-tab-group dynamicHeight>
+           
+            <mat-tab label="First"> Content 1 </mat-tab>
+            <mat-tab label="Second"> Content 2 </mat-tab>
+            <mat-tab label="Third"> Content 3 </mat-tab>
+          </mat-tab-group> 
+      
+      <button mat-raised-button>More information about my whole academic experience</button>
+
+    
+    </div>
+  </section>
+  <section @fade id="work">
+    <div class="screen_container">
+      
+          <h2 class="title" >Work experience</h2>
+          <div class="tabordion">
+            <section id="section1">
+              <input type="radio" name="sections" id="option1" checked>
+              <label for="option1">FIB Visiona</label>
+              <article @fade>
+                <h2>FIB Visiona Organizer</h2>
+                <img src="../../../assets/img/upcrwth.png" alt="FIB Visiona Website">
+                <p> Manteinance of the company's website and updating its content.</p>
+                <p> Responsible for the good use of the platforms for our online career fairs. We used Attendify and Eventmobi.</p>
+                <p> Connect companies with the students who filled their role the best.</p>
+                <p> Main organizer of all events.</p>
+              </article>
+            </section>
+             
+            <section id="section2">
+              <input type="radio" name="sections" id="option2">
+              <label for="option2">UNITECH</label>
+              <article @fade>
+                <h2>UNITECH</h2>
+                <P>I dont know yet</P>
+              </article>
+            </section>
+            
+          </div>
+
+          
+
+    </div>
+  </section>
+  <section id="projects">
+    <div class="screen_container">
+      <div class="title">
+          <h2>Projects</h2>
+      </div>
+      <div class="projects">
+        <mat-card class="example-card">
+          <mat-card-header>
+            
+            <mat-card-title>OFF-Home</mat-card-title>
+            <mat-card-subtitle>Social Outdoors Fitness App</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="../../../assets/img/offhome.jpg" alt="Logo of OFF-HOME">
+          <mat-card-content>
+
+            <mat-accordion>
+              <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Technologies used
+                  </mat-panel-title>
+                  <mat-panel-description>
+                    Node.js AWS
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>Responsible of the backend of this Android app. Deployed with Docker in AWS. Tested with Mocha and Chai. Used Express.js and sqlite3 and firebase. Documented in Postman. Analysis with Amazon CloudWatch and Postman Monitor.
+                </p>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>GITHUB Backend</button>
+            <button mat-button>GITHUB Frontend</button>
+          </mat-card-actions>
+        </mat-card>
+        <mat-card class="example-card">
+          <mat-card-header>
+            
+            <mat-card-title>Kakuro Game</mat-card-title>
+            <mat-card-subtitle>Kakuro Solver, Maker and Ranking</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="../../../assets/img/kakuro.jpg" alt="Logo of Kakuro">
+          <mat-card-content>
+
+            <mat-accordion>
+              <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Technologies used
+                  </mat-panel-title>
+                  <mat-panel-description>
+                    JAVA
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>Responsible of the backend of this Android app. Deployed with Docker in AWS. Tested with Mocha and Chai. Used Express.js and sqlite3 and firebase. Documented in Postman. Analysis with Amazon CloudWatch and Postman Monitor.
+                </p>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>GITHUB Backend</button>
+            <button mat-button>GITHUB Frontend</button>
+          </mat-card-actions>
+        </mat-card>
+    </div>
+      
+    </div>
+  </section>
+</div>
+  
+

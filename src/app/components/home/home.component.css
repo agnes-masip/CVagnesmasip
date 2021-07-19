@@ -1,0 +1,405 @@
+.container{
+  position: relative;
+    background-color: #fafafa;
+}
+.highlight{
+  color:rgb(161, 17, 17);
+  font-weight: bold;
+}
+.line-1{
+  
+  
+  border-right: 3px solid rgb(161, 17, 17);
+ 
+ 
+  white-space: nowrap;
+  overflow: hidden;
+ 
+}
+
+
+/* Animation */
+.anim-typewriter{
+animation: typewriter 4s steps(44) 1s 1 normal both,
+           blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+from{width: 0;}
+to{width: 12.8em;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: rgb(161, 17, 17);}
+to{border-right-color: transparent;}
+}
+
+ .intro{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5%;
+    right: 6%;
+    font-size: 4vh;
+    background-color: transparent;
+    margin: 20px 0px;
+ }
+ .screen_container{
+  margin-top: 40vh;
+  min-height: 100vh;
+  align-items: center;
+  text-align: center;
+  top: 10%;
+  margin: 20px 0px;
+  
+} 
+.title{
+  font-size: 15vh;
+  margin-left: 3%;
+  padding-top: 20px;
+  color:#450404;
+  text-align: left;
+  margin-bottom: 50px;
+
+}
+.title:hover{
+  animation: shake 0.1s;
+}
+.subtitle{
+  font-size: 2vh;
+}
+
+.table{
+  display: flex;
+  text-align: center;
+  font-size: small;
+  width: auto;
+  justify-content: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(161, 17, 17);
+  margin-left: 30vh;
+}
+
+.job h1:hover, .job p:hover, .job select:hover, .job img:hover, .job i:hover{
+  animation: shake 0.2s;
+}
+
+
+
+.programs{
+margin-top: 20px;
+}
+.mat-tab-group {
+  flex-direction: row !important;
+}
+
+.mat-tab-labels {
+    flex-direction: column !important;
+}
+
+.mat-tab-label-active {
+    border-right: 2px solid red !important;
+}
+
+.mat-ink-bar {
+    display: none;
+}
+
+.table{
+  margin-bottom: 30px;
+}
+.table .job{
+  width: 40vh;
+  margin: 30px 0px;
+  padding: 20px;
+}
+
+select{
+  background-color: #450404;
+  color: whitesmoke;
+  width: 35vh;
+  margin: 30px 0px;
+  padding: 20px;
+  font-size: large;
+}
+
+.card{
+  display: flex;
+}
+
+.animate__animated.animate__bounceInDown {
+    --animate-duration: 1.5s;
+  }
+#home{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#home::before{
+  position: absolute;
+}
+
+#aboutMe{
+  display: flex;
+  flex-direction: column;
+  
+}
+#studies{
+  display: flex;
+  flex-direction: column;
+}
+#projects{
+  display: flex;
+  flex-direction: column;
+}
+#work{
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  min-height: 100vh
+}
+.background{
+  flex: left;
+}
+button{
+ color: white;
+ background-color: rgb(161, 17, 17);
+ opacity: 1;
+ margin: 1vh;
+ padding: 1.5vh;
+ font-size: 2vh;
+}
+
+button:hover{
+  animation: shake 0.2s;
+}
+
+  
+  .circle{
+    position: absolute;
+    border-radius: 50vh;
+    background: rgb(161, 17, 17);
+    animation: ripple 15s infinite;
+    box-shadow: 0px 0px 1px 0px #508fb9;
+  }
+  
+  .small{
+    width: 20vh;
+    height: 20vh;
+    left: -10vh;
+    top: 50vh;
+  }
+  
+  .medium{
+    width: 30vh;
+    height: 30vh;
+    left: -20vh;
+    top: 40vh;
+  }
+  
+  .large{
+    width: 60vh;
+    height: 60vh;
+    left: -30vh;
+    top: 30vh;
+  }
+  
+  .xlarge{
+    width: 80vh;
+    height: 80vh;
+    left: -40vh;
+    top: 20vh;
+  }
+  
+  .xxlarge{
+    width: 100vh;
+    height: 100vh;
+    left: -50vh;
+    top: 10vh;
+  }
+  
+  .shade1{
+    opacity: 0.2;
+  }
+  .shade2{
+    opacity: 0.5;
+  }
+  
+  .shade3{
+    opacity: 0.6;
+  }
+  
+  .shade4{
+    opacity: 0.8;
+  }
+  
+  .shade5{
+    opacity: 1;
+  }
+  
+  @keyframes ripple{
+    0%{
+      transform: scale(0.8);
+    }
+    
+    50%{
+      transform: scale(1.2);
+    }
+    
+    100%{
+      transform: scale(0.8);
+    }
+  }
+
+  .example-card {
+    max-width: 40vh;
+    margin-left: 40px;
+  }
+  
+
+.tabordion {
+  color: black;
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 80%;
+  margin-bottom: 60px;
+}
+
+.tabordion input[name="sections"] {
+  left: -9999px;
+  position: absolute;
+  
+}
+
+.tabordion section {
+  display: block;
+}
+.tabordion section label:hover{
+  animation: shake 0.2s;
+}
+.tabordion section label {
+  background: #a07878;
+  border:1px solid #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 15px 20px;
+  position: relative;
+  width: 180px;
+  
+}
+
+.tabordion section article {
+  display: none;
+  left: 230px;
+  min-width: 300px;
+  padding: 0 0 0 21px;
+  position: absolute;  
+  top: 0;
+}
+
+
+
+.tabordion input[name="sections"]:checked + label { 
+  background: #450404;
+  color:whitesmoke;
+}
+
+.tabordion input[name="sections"]:checked ~ article {
+  display: block;
+  animation: fade 0.5s;
+}
+
+
+@media (max-width: 533px) {
+  
+  h1 {
+    width: 100%;
+  }
+
+  .tabordion {
+    width: 100%;
+  }
+  
+  .tabordion section label {
+    font-size: 1em;
+    width: 160px;
+  }  
+
+ .tabordion section article {
+    left: 200px;
+    min-width: 270px;
+  } 
+  
+  .tabordion section article:after {
+    background-color: #450404;
+    bottom: 0;
+    content: "";
+    display: block;
+    left:-199px;
+    position: absolute;
+    top: 0;
+    width: 200px;
+
+  }  
+  
+}
+
+
+
+
+@media (max-width: 768px) {
+  h1 {
+    width: 96%;
+  }
+
+  .tabordion {
+    width: 96%;
+  }
+}
+
+
+@media (min-width: 1366px) {
+  h1 {
+    width: 70%;
+  }
+
+  .tabordion {
+    width: 70%;
+  }
+}
+.projects{
+  display: flex;
+  margin-top: 30px;
+}
+.mat-card:hover{
+  
+    animation: shake 0.2s;
+  
+}
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    30% { transform: translate(-1px, -2px) rotate(-1deg); }
+    50% { transform: translate(-3px, 0px) rotate(1deg); }
+    70% { transform: translate(3px, 2px) rotate(0deg); }
+    80% { transform: translate(1px, -1px) rotate(1deg); }
+    100% { transform: translate(-1px, 2px) rotate(-1deg); }
+    
+  }
+
+  @keyframes fade {
+    0% { transform: translate(0px, 40px); }
+    
+    
+  }
+
+
+
+
+  
