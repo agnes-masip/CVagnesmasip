@@ -32,35 +32,35 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   panelOpenState = false;
 
-  selectedBackend: string = 'Code';
-  img1: string = '../../../assets/img/html.png';
-  img2: string = '../../../assets/img/css.png';
-  img3: string = '../../../assets/img/js.png';
+  selectedBackend: string = 'Deployment';
+  img1: string = '../../../assets/img/aws.png';
+  img2: string = '../../../assets/img/heroku.png';
+  img3: string = '../../../assets/img/docker.png';
 
   //event handler for the select element's change event
   selectChangeHandler (event: any) {
     //update the ui
     this.selectedBackend = event.target.value;
     if(event.target.value == 'Code'){
-      this.img1 = '../../../assets/img/html.png';
-      this.img2 = '../../../assets/img/css.png';
-      this.img3 = '../../../assets/img/js.png';
-    }else if(event.target.value == 'Deployment'){
-      this.img1 = '../../../assets/img/react.jpg';
-      this.img2 = '../../../assets/img/html.png';
-      this.img3 = '../../../assets/img/js.png';
-    }else if(event.target.value == 'Databases'){
-      this.img1 = '../../../assets/img/html.png';
-      this.img2 = '../../../assets/img/react.jpg';
-      this.img3 = '../../../assets/img/js.png';
-    }else if(event.target.value == 'Documentation'){
-      this.img1 = '../../../assets/img/html.png';
-      this.img2 = '../../../assets/img/sagma.png';
-      this.img3 = '../../../assets/img/upcrwth.png';
-    }else if(event.target.value == 'Testing'){
-      this.img1 = '../../../assets/img/js.png';
-      this.img2 = '../../../assets/img/angular.jpg';
+      this.img1 = '../../../assets/img/node.png';
+      this.img2 = '../../../assets/img/express.png';
       this.img3 = '';
+    }else if(event.target.value == 'Deployment'){
+      this.img1 = '../../../assets/img/aws.png';
+      this.img2 = '../../../assets/img/heroku.png';
+      this.img3 = '../../../assets/img/docker.png';
+    }else if(event.target.value == 'Databases'){
+      this.img1 = '../../../assets/img/sqlite.png';
+      this.img2 = '../../../assets/img/firebase.png';
+      this.img3 = '../../../assets/img/mongo.jpg';
+    }else if(event.target.value == 'Documentation'){
+      this.img1 = '../../../assets/img/postman.png';
+      this.img2 = '../../../assets/img/openapi.png';
+      this.img3 = '../../../assets/img/swagger.png';
+    }else if(event.target.value == 'Testing'){
+      this.img1 = '../../../assets/img/mocha.png';
+      this.img2 = '../../../assets/img/chai.jpg';
+      this.img3 = '../../../assets/img/junit.png';
     }
   }
 
@@ -68,6 +68,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 
   
 }

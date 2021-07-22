@@ -36,35 +36,36 @@
           <div class="table">
             
             <div class="job">
-              <i class="material-icons" style="font-size:10vh;color:rgb(161, 17, 17)">laptop</i>
+              <i class="material-icons" style="font-size:13vh;color:rgb(161, 17, 17)">laptop</i>
               <div class="expl">
               <h1>Front-End Developer</h1>
-              <p>Experience in Web development and Android mobile applications.</p>
+              <p>Experience in <span>Web development</span> and <span> Android mobile applications</span>.</p>
             </div>
               <div class="programs">
-                <img src="../../../assets/img/html.png" alt="html logo" width="auto" height="80">
-                <img src="../../../assets/img/css.png" alt="html logo" width="auto" height="80">
-                <img src="../../../assets/img/js.png" alt="html logo" width="auto" height="80">
-                <img src="../../../assets/img/angular.jpg" alt="html logo" width="auto" height="80">
-                <img src="../../../assets/img/react.jpg" alt="html logo" width="auto" height="80">
+                <img src="../../../assets/img/html.png" alt="html logo" width="auto" height="100">
+                <img src="../../../assets/img/css.png" alt="html logo" width="auto" height="100">
+                <img src="../../../assets/img/js.png" alt="html logo" width="auto" height="100">
+                <br>
+                <img src="../../../assets/img/angular.png" alt="html logo" width="auto" height="100">
+                <img src="../../../assets/img/react.png" alt="html logo" width="auto" height="100">
                 
               </div>
             </div>
             <div class="job">
-              <i class="material-icons" style="font-size:10vh;color:rgb(161, 17, 17);">storage</i>
+              <i class="material-icons" style="font-size:13vh;color:rgb(161, 17, 17);">storage</i>
               <h1>Back-End Developer</h1>
-              <p>Experience in the creation of API REST from scratch and the deployment and manteinance of servers and databases.</p>
+              <p>Experience in the creation of <span>API REST</span> from scratch and the deployment and manteinance of <span>servers and databases</span>.</p>
               
               <select @fade (change)="selectChangeHandler($event)">
-                <option value="Code">Code</option>
                 <option value="Deployment">Deployment</option>
+                <option value="Code">Code</option>
                 <option value="Databases">Databases</option>
                 <option value="Documentation">Documentation</option>
                 <option value="Testing">Testing</option>
             </select>
-            <img @fade src={{img1}} alt="html logo" width="auto" height="80">
-            <img @fade src={{img2}} width="auto" height="80">
-            <img @fade src={{img3}} onerror="hideImg()" width="auto" height="80">
+            <img src={{img1}} width="auto" height="100">
+            <img src={{img2}} width="auto" height="100">
+            <img src={{img3}} onerror="hideImg()" width="auto" height="100">
             <script>
               function hideImg() {
                 document.getElementById("HideImg")
@@ -97,9 +98,9 @@
               
             </div>
             <div class="job">
-              <i class="material-icons" style="font-size:10vh;color:rgb(161, 17, 17);">waterfall_chart</i>
+              <i class="material-icons" style="font-size:13vh;color:rgb(161, 17, 17);">waterfall_chart</i>
               <h1>Software Engineer</h1>
-              <p>Experience in the creating of many software projects plans; UML diagrams, time and money management and requisites.</p>
+              <p>Experience in the creating of many software <span>projects plans</span>; UML diagrams, <span>time and money management</span> and requisites.</p>
               <h3>Agile Methodologies</h3>
               <h3>UML, OCL</h3>
               <h3>Requirements engineer</h3>
@@ -107,8 +108,10 @@
             </div>
           </div>
         </div>
+        <!--
           <button mat-raised-button>More information about programming languages and my experience with them</button>
-    </div>
+        -->
+        </div>
    
     
 
@@ -122,12 +125,12 @@
              
         
               <div class="timeline-content timeline-card">
-                <div class="timeline-img-header">
+                <div class="timeline-img-header-pedrera">
                   <h2>La Pedrera Foundation</h2>
                 </div>
                 <div class="date">2016-2018</div>
-                <p>Several projects and courses like "Crazy for New Technologies" or "Barcelona International Youth Science Challenge"</p>
-                <a class="bnt-more">More</a>
+                <p>Several projects and courses like "Crazy for New Technologies" and <span>"Barcelona International Youth Science Challenge"</span></p>
+               <br>
               </div>
             </div> 
         
@@ -136,12 +139,12 @@
               
         
               <div class="timeline-content timeline-card ">
-                <div class="timeline-img-header">
+                <div class="timeline-img-header-upc">
                   <h2>UPC</h2>
                 </div>
                 <div class="date">2018-2022</div>
-                <p>Bachelor in Computer Science, specialized in Software Engineering.</p>
-                <a class="bnt-more" href="javascript:void(0)">More</a>
+                <p>Bachelor in Computer Science, specialized in <span>Software Engineering</span>.</p>
+               <br>
               </div>
         
             </div>   
@@ -150,12 +153,13 @@
         
         
               <div class="timeline-content timeline-card">
-                <div class="timeline-img-header">
+                <div class="timeline-img-header-rwth">
                   <h2>RWTH</h2>
                 </div>
                 <div class="date">2021</div>
-                <p>Student in UNITECH INTERNATIONAL. Programme which complements their traditional studies with foreign exposure and management training, as well as coaching by senior members of the network.</p>
-                <a class="bnt-more" href="javascript:void(0)">More</a>
+                <p>Student in <span>UNITECH INTERNATIONAL</span>.</p>
+                <p>Programme which complements their traditional studies with foreign exposure and <span>management training</span>, as well as coaching by senior members of the network.</p>
+                <br>
               </div>
             </div>   
         <!--
@@ -177,7 +181,9 @@
              
             </div>
       
-      <button mat-raised-button>More information about my whole academic experience</button>
+      <!-- I SHOULD DO THIS ONE FOR SURE!!!!
+        <button mat-raised-button>More information about my whole academic experience</button>
+      -->
 
     
     </div>
@@ -192,7 +198,9 @@
               <label for="option1">FIB Visiona</label>
               <article @fade>
                 <h2>FIB Visiona Organizer</h2>
-                <img src="../../../assets/img/upcrwth.png" alt="FIB Visiona Website">
+                <br>
+                <img src="../../../assets/img/fv.jpg" alt="FIB Visiona Website" width="500" height="auto">
+                <br>
                 <p> Manteinance of the company's website and updating its content.</p>
                 <p> Responsible for the good use of the platforms for our online career fairs. We used Attendify and Eventmobi.</p>
                 <p> Connect companies with the students who filled their role the best.</p>
@@ -219,11 +227,12 @@
     <div class="screen_container">
       <div class="title">
           <h2>Projects</h2>
+          <i class="fas fa-github"></i>
       </div>
       <div class="projects">
         <mat-card class="example-card">
           <mat-card-header>
-            
+            <div mat-card-avatar class="offhome-image"></div>
             <mat-card-title>OFF-Home</mat-card-title>
             <mat-card-subtitle>Social Outdoors Fitness App</mat-card-subtitle>
           </mat-card-header>
@@ -252,7 +261,7 @@
         </mat-card>
         <mat-card class="example-card">
           <mat-card-header>
-            
+            <div mat-card-avatar class="kakuro-image"></div>
             <mat-card-title>Kakuro Game</mat-card-title>
             <mat-card-subtitle>Kakuro Solver, Maker and Ranking</mat-card-subtitle>
           </mat-card-header>
@@ -273,13 +282,74 @@
                 </p>
               </mat-expansion-panel>
             </mat-accordion>
+            <i class="fab fa-github"></i>
+          </mat-card-content>
+          <mat-card-actions>
+            
+            <button mat-button> Backend</button>
+            <button mat-button>GITHUB Frontend</button>
+          </mat-card-actions>
+        </mat-card>
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="hackernews-image"></div>
+            <mat-card-title>HackerNews Clone</mat-card-title>
+            <mat-card-subtitle>Responsive web (auth), API Creation</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="../../../assets/img/hackernews.jpg" alt="Logo of HackerNews">
+          <mat-card-content>
+
+            <mat-accordion>
+              <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Technologies used
+                  </mat-panel-title>
+                  <mat-panel-description>
+                    Ruby Yaml React
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>Ruby on Rails for the clone, with authoritation and deployed in Heroku. Added JSON capabilities to create an API in Swagger. Used this API for another clone made with React-web and deployed in another server.
+                </p>
+              </mat-expansion-panel>
+            </mat-accordion>
           </mat-card-content>
           <mat-card-actions>
             <button mat-button>GITHUB Backend</button>
             <button mat-button>GITHUB Frontend</button>
           </mat-card-actions>
         </mat-card>
-    </div>
+    
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="sagma-image"></div>
+        <mat-card-title>Travel Itinerary Webapp</mat-card-title>
+        <mat-card-subtitle>Distributed Systems Travel App</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="../../../assets/img/sagma.png" alt="Logo of Sagma">
+      <mat-card-content>
+
+        <mat-accordion>
+          <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Technologies used
+              </mat-panel-title>
+              <mat-panel-description>
+                Python Owl
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>Ruby on Rails for the clone, with authoritation and deployed in Heroku. Added JSON capabilities to create an API in Swagger. Used this API for another clone made with React-web and deployed in another server.
+            </p>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>GITHUB Backend</button>
+        <button mat-button>GITHUB Frontend</button>
+      </mat-card-actions>
+    </mat-card>
+</div>
       
     </div>
   </section>
