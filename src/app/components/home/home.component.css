@@ -124,6 +124,10 @@ margin-top: 6vh;
     display: none;
 }
 
+.space{
+  height: 5vh;
+}
+
 .table{
   margin-bottom: 30px;
 }
@@ -285,8 +289,12 @@ button:hover{
   }
 
   .example-card {
-    max-width: 40vh;
-    margin-left: 40px;
+    width: 70vh;
+    margin-left: 4vh;
+  }
+
+  .example-card:nth-child(odd) {
+    margin-left: 15vh;
   }
   
 
@@ -406,7 +414,11 @@ img{
     width: 70%;
   }
 }
-.projects{
+.projects1{
+  display: flex;
+  margin-top: 30px;
+}
+.projects2{
   display: flex;
   margin-top: 30px;
 }
@@ -434,6 +446,28 @@ img{
   background-image: url('../../../assets/img/hackernews.jpg');
   background-size: cover;
 }
+.github{
+  height: 8vh;
+  width: auto;
+}
+.projectButtons{
+  display: flex;
+  
+
+}
+.projectButtons p {
+  text-align: center;
+  padding-top: 3vh;
+  
+}
+
+.buttonCard {
+  display: flex;
+}
+.buttonLine {
+  display: flex;
+}
+
   
   @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }

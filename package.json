@@ -22,6 +22,7 @@
     "@angular/router": "~12.0.4",
     "animate.css": "^4.1.1",
     "mdb-angular-ui-kit": "^1.0.0-beta8",
+    "ng-image-slider": "^2.8.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "web-animations-js": "^2.3.2",

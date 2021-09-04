@@ -14,6 +14,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatSidenavModule,
     MatButtonModule,
     MatCardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    NgImageSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

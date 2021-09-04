@@ -2,6 +2,7 @@ import { animate, stagger, query, state, style, transition, trigger } from '@ang
 import { Component, OnInit } from '@angular/core';
 
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -63,11 +64,61 @@ export class HomeComponent implements OnInit {
       this.img3 = '../../../assets/img/junit.png';
     }
   }
+ 
+
+  FVImages: Array<object> = [{
+    image: '../../../assets/img/fv.jpg',
+    thumbImage: '../../../assets/img/fv.jpg',
+    title: 'backend website',
+  },{
+    image: '../../../assets/img/attendify.png',
+    thumbImage: '../../../assets/img/attendify.png',
+    title: 'Livestream platform',
+  },{
+    image: '../../../assets/img/presfv.jpg',
+    thumbImage: '../../../assets/img/presfv.jpg',
+    title: 'Non-online fair',
+  }];
+
+  OFFHomeImages: Array<object> = [{
+    image: '../../../assets/img/off1.png',
+    thumbImage: '../../../assets/img/off1.png',
+    title: 'frontend',
+  },{
+    image: '../../../assets/img/offpostman.png',
+    thumbImage: '../../../assets/img/offpostman.png',
+    title: 'Postman to communicate API with Front',
+  },
+  {
+    image: '../../../assets/img/monitor.png',
+    thumbImage: '../../../assets/img/monitor.png',
+    title: 'Monitor for the API deployed in AWS',
+  }];
+
+  HackerNewsImages: Array<object> = [{
+    image: '../../../assets/img/off1.png',
+    thumbImage: '../../../assets/img/off1.png',
+    title: 'Main Noticies',
+  },{
+    image: '../../../assets/img/offpostman.png',
+    thumbImage: '../../../assets/img/offpostman.png',
+    title: 'Form',
+  },
+  {
+    image: '../../../assets/img/monitor.png',
+    thumbImage: '../../../assets/img/monitor.png',
+    title: 'React Version',
+  }];
+
+  
+
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+
 
 
   
