@@ -258,11 +258,21 @@
           </mat-card-content>
           <mat-card-actions>
             <div class="buttonCard">
-              <button mat-button>
-                <img class="github" src="../../../assets/img/googleplay.png">
+              <button class="googleplay">
+                <img class="google" src="../../../assets/img/googleplay.png">
               </button>
-              <button mat-button>Backend</button>
-              <button mat-button>Frontend</button>
+              <button class="githubButton">
+                <div class="buttonLine">
+                  <img class="github" src="../../../assets/img/github.png">
+                  <p style="justify-content: center;">Back</p>
+                </div>
+              </button>
+              <button class="githubButton">
+                <div class="buttonLine">
+                  <img class="github" src="../../../assets/img/github.png">
+                  <p style="justify-content: center;">Front</p>
+                </div>
+              </button>
             </div>
             
           </mat-card-actions>
@@ -273,10 +283,11 @@
             <mat-card-title>Kakuro Game</mat-card-title>
             <mat-card-subtitle>Kakuro Solver, Maker and Ranking</mat-card-subtitle>
           </mat-card-header>
-          <img mat-card-image src="../../../assets/img/kakuro.jpg" alt="Logo of Kakuro">
+          <ng-image-slider [images]="OFFHomeImages"[imageSize]="{width: '700', height: '420', space: 2}" #nav></ng-image-slider>
           <mat-card-content>
 
             <mat-accordion>
+              <div class="space"></div>
               <mat-expansion-panel hideToggle>
                 <mat-expansion-panel-header>
                   <mat-panel-title>
@@ -294,13 +305,18 @@
           </mat-card-content>
           <mat-card-actions>
             <div class="buttonCard">
-              <button mat-button>
+              <button class="githubButton">
                 <div class="buttonLine">
                   <img class="github" src="../../../assets/img/github.png">
-                  <p>Backend</p>
+                  <p style="justify-content: center;">Code</p>
                 </div>
               </button>
-              <button mat-button>Frontend</button>
+              <button class="githubButton">
+                <div class="buttonLine">
+                  <img class="github" src="../../../assets/img/jar.png">
+                  <p style="justify-content: center;">.exe</p>
+                </div>
+              </button>
             </div>
             
           </mat-card-actions>
@@ -313,10 +329,9 @@
             <mat-card-title>HackerNews Clone</mat-card-title>
             <mat-card-subtitle>Responsive web (auth), API Creation</mat-card-subtitle>
           </mat-card-header>
-          <ng-image-slider [images]="HackerNewsImages" #nav></ng-image-slider>
-          <img mat-card-image src="../../../assets/img/hackernews.jpg" alt="Logo of HackerNews">
+          <ng-image-slider [images]="HackerNewsImages"[imageSize]="{width: '700', height: '420', space: 2}" #nav></ng-image-slider>
           <mat-card-content>
-
+            <div class="space"></div>
             <mat-accordion>
               <mat-expansion-panel hideToggle>
                 <mat-expansion-panel-header>
@@ -333,8 +348,21 @@
             </mat-accordion>
           </mat-card-content>
           <mat-card-actions>
-            <button mat-button>GITHUB Backend</button>
-            <button mat-button>GITHUB Frontend</button>
+            <div class="buttonCard">
+              <button class="githubButton">
+                <div class="buttonLine">
+                  <img class="github" src="../../../assets/img/github.png">
+                  <p style="justify-content: center;">Ruby code</p>
+                </div>
+              </button>
+              <button class="githubButton">
+                <div class="buttonLine">
+                  <img class="github" src="../../../assets/img/github.png">
+                  <p style="justify-content: center;">React code</p>
+                </div>
+              </button>
+             
+            </div>
           </mat-card-actions>
         </mat-card>
     
@@ -344,9 +372,9 @@
         <mat-card-title>Travel Itinerary Webapp</mat-card-title>
         <mat-card-subtitle>Distributed Systems Travel App</mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-image src="../../../assets/img/sagma.png" alt="Logo of Sagma">
+      <ng-image-slider [images]="OFFHomeImages"[imageSize]="{width: '700', height: '420', space: 2}" #nav></ng-image-slider>
       <mat-card-content>
-
+        <div class="space"></div>
         <mat-accordion>
           <mat-expansion-panel hideToggle>
             <mat-expansion-panel-header>
@@ -363,8 +391,15 @@
         </mat-accordion>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-button>GITHUB Backend</button>
-        <button mat-button>GITHUB Frontend</button>
+        <div class="buttonCard">
+          <button class="githubButton">
+            <div class="buttonLine">
+              <img class="github" src="../../../assets/img/github.png">
+              <p style="justify-content: center;">Code</p>
+            </div>
+          </button>
+         
+        </div>
       </mat-card-actions>
     </mat-card>
 </div>

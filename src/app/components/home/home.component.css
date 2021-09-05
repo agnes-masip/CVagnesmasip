@@ -211,6 +211,48 @@ button:hover{
   animation: shake 0.2s;
 }
 
+.googleplay{
+  color: white;
+ background-color: rgba(255, 255, 255, 0);
+ opacity: 1;
+ margin: 0vh;
+ border-width: 0;
+ padding: 0vh;
+ font-size: 2vh;
+}
+.buttonCard {
+  display: flex;
+}
+.buttonCard button:hover{
+  opacity: 0.5;
+  animation: shake 0s;
+}
+.buttonLine {
+  display: flex;
+  align-items: center;
+  margin-left: 2vh;
+  
+}
+.google{
+  height: 7vh;
+  width: auto;
+  padding: 0;
+}
+.github{
+  height: 6vh;
+  width: auto;
+  padding: 1vh;
+}
+.githubButton{
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 1;
+  margin: 0vh;
+  border-width: 0;
+  padding: 0vh;
+  font-size: 2vh;
+  color: #000000;
+}
+
   
   .circle{
     position: absolute;
@@ -446,10 +488,7 @@ img{
   background-image: url('../../../assets/img/hackernews.jpg');
   background-size: cover;
 }
-.github{
-  height: 8vh;
-  width: auto;
-}
+
 .projectButtons{
   display: flex;
   
@@ -461,12 +500,7 @@ img{
   
 }
 
-.buttonCard {
-  display: flex;
-}
-.buttonLine {
-  display: flex;
-}
+
 
   
   @keyframes shake {
@@ -484,24 +518,30 @@ img{
     
     
   }
+  @keyframes opacity {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+    
+  }
   
 .timeline {
   position: relative;
  
-  max-width: 1140px;
+  max-width: 114vh;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 1.5vh 0;
 }
 
 .timeline::after {
   content: '';
   position: absolute;
-  width: 2px;
+  width: 0.2vh;
   background: #450404;
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -1px;
+  margin-left: -0.1vh;
   width: 0.3vh;
 }
 
@@ -513,7 +553,7 @@ img{
   color: white;
   font-size: 2vh;
   font-weight: bolder;
-  padding: 10px;
+  padding: 1vh;
   position: absolute;
   top: 0;
   right: 0;
@@ -523,7 +563,7 @@ img{
 }
 .timeline-item:nth-child(even) .timeline-content {
   float: right;
-  padding: 40px 30px 10px 30px;
+  padding: 4vh 3vh 1vh 3vh;
 }
 .timeline-item:nth-child(even) .timeline-content .date {
   right: auto;
@@ -535,9 +575,9 @@ img{
   border-style: solid;
   width: 0;
   height: 0;
-  top: 30px;
-  left: -15px;
-  border-width: 10px 15px 10px 0;
+  top: 3vh;
+  left: -1.5vh;
+  border-width: 1vh 1.5vh 1vh 0;
   border-color: transparent #f5f5f5 transparent transparent;
 }
 .timeline-item::after {
@@ -549,10 +589,10 @@ img{
 .timeline-content {
   position: relative;
   width: 45%;
-  padding: 10px 30px;
-  border-radius: 4px;
+  padding: 1vh 3vh;
+  border-radius: 0.4vh;
   background: #f5f5f5;
-  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2vh 2.5vh -1.5vh rgba(0, 0, 0, 0.3);
 }
 .timeline-content::after {
   content: "";
@@ -560,47 +600,47 @@ img{
   border-style: solid;
   width: 0;
   height: 0;
-  top: 30px;
-  right: -15px;
-  border-width: 10px 0 10px 15px;
+  top: 3vh;
+  right: -1.5vh;
+  border-width: 1vh 0 1vh 1.5vh;
   border-color: transparent transparent transparent #f5f5f5;
 }
 .timeline-card {
   padding: 0 !important;
 }
 .timeline-card p {
-  padding: 0 20px;
+  padding: 0 2vh;
 }
 .timeline-card a {
-  margin-left: 20px;
+  margin-left: 2vh;
 }
 .timeline-item .timeline-img-header-pedrera {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(156, 154, 154, 0.3)), url("../../../assets/img/pedrera.png") center center no-repeat;
   background-size: cover;
-  height: 200px;
+  height: 20vh;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
 }
 .timeline-item .timeline-img-header-upc {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(156, 154, 154, 0.3)), url("../../../assets/img/upc.jpg") center center no-repeat;
   background-size: cover;
-  height: 200px;
+  height: 20vh;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
 }
 .timeline-item .timeline-img-header-rwth {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(156, 154, 154, 0.3)), url("../../../assets/img/rwth.png") center center no-repeat;
   background-size: cover;
-  height: 200px;
+  height: 20vh;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
 }
 
 .timeline-content h2 {
   color: #000000;
   position: absolute;
-  bottom: 5px;
-  left: 20px;
+  bottom: 0.5vh;
+  left: 2vh;
 }
 
 
