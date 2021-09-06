@@ -333,6 +333,7 @@ button:hover{
   .example-card {
     width: 70vh;
     margin-left: 4vh;
+    
   }
 
   .example-card:nth-child(odd) {
