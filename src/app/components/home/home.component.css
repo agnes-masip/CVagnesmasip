@@ -6,6 +6,23 @@
   color:rgb(161, 17, 17);
   font-weight: bold;
 }
+
+.bold{
+  
+  font-weight: bold;
+}
+
+.langBold{
+ 
+  font-weight: 1200;
+  font-size: 2vh;
+  text-align: center;
+  margin-right: 1.3vh;
+  line-height: 3.5vh;
+  width: 7vh;
+}
+
+
 .line-1{
   
   
@@ -31,6 +48,7 @@ to{width: 12.8em;}
 from{border-right-color: rgb(161, 17, 17);}
 to{border-right-color: transparent;}
 }
+
 
 
  .intro{
@@ -144,6 +162,10 @@ select{
   margin: 30px 0px;
   padding: 20px;
   font-size: large;
+}
+
+option:hover{
+  background-color: rgb(161, 17, 17);
 }
 
 .card{
@@ -330,9 +352,15 @@ button:hover{
     }
   }
 
+  
+  .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+    
+  }
   .example-card {
     width: 70vh;
     margin-left: 4vh;
+    background-color: white;
     
   }
 
@@ -465,6 +493,17 @@ img{
   display: flex;
   margin-top: 30px;
 }
+ul{
+  list-style-type: none;
+  margin-top: 2vh;
+  text-align: left;
+  padding-left: 8vh;
+}
+
+ul li{
+  padding-top: 1vh;
+}
+
 .mat-card {
   box-shadow: 0 20px 35px -2px rgba(0, 0, 0, 0.3);
 }
@@ -472,6 +511,12 @@ img{
   
     animation: shake 0.2s;
   
+}
+.mat-card-title{
+  font-size: 3vh;
+  text-align: left;
+  align-items: center;
+  font-weight: bold;
 }
 .sagma-image {
   background-image: url('../../../assets/img/sagma.png');
@@ -488,6 +533,10 @@ img{
 .hackernews-image {
   background-image: url('../../../assets/img/hackernews.jpg');
   background-size: cover;
+}
+
+.mat-card-header-text {
+  margin: 0 16px;
 }
 
 .projectButtons{

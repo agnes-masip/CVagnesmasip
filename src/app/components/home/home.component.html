@@ -20,7 +20,7 @@
           <h5 >I'm a software engineer and a full-stack developer.</h5>
           <div class="buttons">
           <a href="#aboutMe"><button mat-raised-button>Know more</button></a>
-          <a href="/src/assets/pdf/agnesmasip-cv.pdf" download="agnesmasip-cv"><button style="background-color: #450404" mat-raised-button>Download my CV</button></a>
+         <button style="background-color: #450404" mat-raised-button>Download my CV</button>
         </div>
           <!-- 
           <i class="material-icons" style="font-size:48vh;color:#450404; align-content: center;">circle</i>
@@ -203,10 +203,12 @@
                 <ng-image-slider [images]="FVImages"[imageSize]="{width: '800', height: '300', space: 2}" #nav></ng-image-slider>
                 
                 <br>
-                <p> Manteinance of the company's website and updating its content.</p>
-                <p> Responsible for the good use of the platforms for our online career fairs. We used Attendify and Eventmobi.</p>
-                <p> Connect companies with the students who filled their role the best.</p>
-                <p> Main organizer of all events.</p>
+                <ul>
+                  <li>Manteinance of the company's website and updating its content.</li>
+                  <li>Responsible for the good use of the platforms for our online career fairs. We used Attendify and Eventmobi.</li>
+                  <li>Connect companies with the students who filled their role the best.</li>
+                  <li>Main organizer of all events.</li>
+                </ul>
               </article>
             </section>
              
@@ -243,17 +245,25 @@
             <div class="space"></div>
 
             <mat-accordion>
-              <mat-expansion-panel hideToggle>
+              <mat-expansion-panel>
                 <mat-expansion-panel-header>
                   <mat-panel-title>
                     Technologies used
                   </mat-panel-title>
                   <mat-panel-description>
-                    Node.js AWS
+                    <span class="langBold" >Node.js</span><span class="langBold" >AWS</span> 
                   </mat-panel-description>
                 </mat-expansion-panel-header>
-                <p>Responsible of the backend of this Android app. Deployed with Docker in AWS. Tested with Mocha and Chai. Used Express.js and sqlite3 and firebase. Documented in Postman. Analysis with Amazon CloudWatch and Postman Monitor.
-                </p>
+                <ul>
+                  <li>Responsible of the <span class="bold">backend</span> of this Android app.</li>
+                  <li> Deployed with Docker in AWS EC2.</li>
+                  <li>Tested with Mocha and Chai.</li>
+                  <li>Used Express.js and sqlite3 and Firebase.</li>
+                  <li>Documented in Postman.</li>
+                  <li>Analysis with Amazon CloudWatch and Postman Monitor.</li>
+                  <li>Coded in Webstorm.</li>
+                </ul>
+                
               </mat-expansion-panel>
             </mat-accordion>
           </mat-card-content>
@@ -293,17 +303,21 @@
 
             <mat-accordion>
               <div class="space"></div>
-              <mat-expansion-panel hideToggle>
+              <mat-expansion-panel>
                 <mat-expansion-panel-header>
                   <mat-panel-title>
                     Technologies used
                   </mat-panel-title>
                   <mat-panel-description>
-                    JAVA
+                    <span class="langBold">JAVA</span>
                   </mat-panel-description>
                 </mat-expansion-panel-header>
-                <p>Responsible of the backend of this Android app. Deployed with Docker in AWS. Tested with Mocha and Chai. Used Express.js and sqlite3 and firebase. Documented in Postman. Analysis with Amazon CloudWatch and Postman Monitor.
-                </p>
+                <ul>
+                  <li>An interactive game that can solve, save and create kakuros.</li>
+                  <li>Also has ranking  and other user functionalities.</li>
+                  <li>The use of databases was forbidden.</li>
+                  <li>Coded in Eclipse.</li>
+                </ul>
               </mat-expansion-panel>
             </mat-accordion>
            
@@ -332,6 +346,7 @@
         </mat-card>
       </div>
         <div class="projects2">
+
         <mat-card class="example-card">
           <mat-card-header>
             <div mat-card-avatar class="hackernews-image"></div>
@@ -342,24 +357,28 @@
           <mat-card-content>
             <div class="space"></div>
             <mat-accordion>
-              <mat-expansion-panel hideToggle>
+              <mat-expansion-panel>
                 <mat-expansion-panel-header>
                   <mat-panel-title>
                     Technologies used
                   </mat-panel-title>
                   <mat-panel-description>
-                    Ruby Yaml React
+                    <span class="langBold">Ruby</span> <span class="langBold" >Yaml</span> <span class="langBold" >React</span>  
                   </mat-panel-description>
                 </mat-expansion-panel-header>
-                <p>Ruby on Rails for the clone, with authoritation and deployed in Heroku. Added JSON capabilities to create an API in Swagger. Used this API for another clone made with React-web and deployed in another server.
-                </p>
+                <ul>
+                  <li>Auth-Responsive website. A clone of HackerNews.</li>
+                  <li>Two times deployed in Heroku.</li>
+                  <li>Added JSON capabilities to create an API in Swagger.</li>
+                  <li>Used this API for another clone made with React-web and deployed in another server.</li>
+                </ul>
               </mat-expansion-panel>
             </mat-accordion>
           </mat-card-content>
           <mat-card-actions>
             <div class="buttonCard">
               <button class="githubButton">
-                <a href="https://github.com/OFF-Home/off-home-app" target="_blank" style="text-decoration: none;">
+                <a href="https://github.com/marianievas/Projecte-ASW" target="_blank" style="text-decoration: none;">
                   <div class="buttonLine">
                     <img class="github" src="../../../assets/img/github.png">
                     <p style="justify-content: center; color: black;">Ruby code</p>
@@ -367,7 +386,7 @@
                 </a>
               </button>
               <button class="githubButton">
-                <a href="https://github.com/OFF-Home/off-home-back2.0" target="_blank" style="text-decoration: none;">
+                <a href="https://github.com/DidacClaria/clientweb-hackernews" target="_blank" style="text-decoration: none;">
                   <div class="buttonLine">
                     <img class="github" src="../../../assets/img/github.png">
                     <p style="justify-content: center; color: black;">React code</p>
@@ -379,44 +398,52 @@
           </mat-card-actions>
         </mat-card>
     
-    <mat-card class="example-card">
-      <mat-card-header>
-        <div mat-card-avatar class="sagma-image"></div>
-        <mat-card-title>Travel Itinerary Webapp</mat-card-title>
-        <mat-card-subtitle>Distributed Systems Travel App</mat-card-subtitle>
-      </mat-card-header>
-      <ng-image-slider [images]="OFFHomeImages"[imageSize]="{width: '700', height: '420', space: 2}" #nav></ng-image-slider>
-      <mat-card-content>
-        <div class="space"></div>
-        <mat-accordion>
-          <mat-expansion-panel hideToggle>
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                Technologies used
-              </mat-panel-title>
-              <mat-panel-description>
-                Python Owl
-              </mat-panel-description>
-            </mat-expansion-panel-header>
-            <p>Ruby on Rails for the clone, with authoritation and deployed in Heroku. Added JSON capabilities to create an API in Swagger. Used this API for another clone made with React-web and deployed in another server.
-            </p>
-          </mat-expansion-panel>
-        </mat-accordion>
-      </mat-card-content>
-      <mat-card-actions>
-        <div class="buttonCard">
-          <button class="githubButton">
-            <a href="https://github.com/OFF-Home/off-home-back2.0" target="_blank" style="text-decoration: none;">
-              <div class="buttonLine">
-                <img class="github" src="../../../assets/img/github.png">
-                <p style="justify-content: center; color: black;">Code</p>
-              </div>
-            </a>
-          </button>
-         
-        </div>
-      </mat-card-actions>
-    </mat-card>
+        
+        <mat-card class="example-card">
+         <mat-card-header>
+          <div mat-card-avatar class="sagma-image"></div>
+          <mat-card-title>Travel Itinerary Webapp</mat-card-title>
+          <mat-card-subtitle style="text-align: left;">Distributed Systems Travel App</mat-card-subtitle>
+        </mat-card-header>
+        <ng-image-slider [images]="OFFHomeImages"[imageSize]="{width: '700', height: '420', space: 2}" #nav></ng-image-slider>
+        <mat-card-content>
+          <div class="space"></div>
+          <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Technologies used
+                </mat-panel-title>
+                <mat-panel-description>
+                  <span class="langBold" >Python</span>  <span class="langBold" >Owl</span>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <ul>
+                <li>Distributed system.</li>
+                <li>Created an ontology for transport, accomodation, activities, weather..</li>
+                <li>To plan a full itinerary in the user selected dates.</li>
+                <li>Ontology by Protege.</li>
+                <li>Coded in Python.</li>
+                <li>Local databases. 6 agents.</li>
+              </ul>
+            
+            </mat-expansion-panel>
+          </mat-accordion>
+        </mat-card-content>
+        <mat-card-actions>
+          <div class="buttonCard">
+            <button class="githubButton">
+              <a href="https://github.com/emmapereira/ECSDIsagma" target="_blank" style="text-decoration: none;">
+                <div class="buttonLine">
+                  <img class="github" src="../../../assets/img/github.png">
+                  <p style="justify-content: center; color: black;">Code</p>
+                </div>
+              </a>
+            </button>
+          
+          </div>
+        </mat-card-actions>
+      </mat-card>
 </div>
       
     </div>
