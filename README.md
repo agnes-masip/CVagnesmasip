@@ -2,7 +2,7 @@
 
 This my first project with Angular. My own cv website. This website is made from scratch to try to gain more control with my HTML/CSS skills. I did this website with the intention to learn and increase my speed when creating web applications with different frameworks. It has some bugs and the content is not properly updated. 
 
-##Ignore the rest of this text
+## Ignore the rest of this text
 
 ## Angular info 
 
